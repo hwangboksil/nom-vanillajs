@@ -1,0 +1,19 @@
+h2, 
+h3 {
+    display: inline;
+}
+
+#play-btn{
+    width: 50px;
+    height: 25px;
+}
+
+input {
+    width: 200px;
+    height: 25px;
+}
+
+#guess-num {
+    margin-top: 25px;
+}
+

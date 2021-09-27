@@ -3,9 +3,22 @@
   <head>
     <title>Vanilla Challenge</title>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/style.css">
   </head>
 
   <body>
+      <h1>Random Number Game!</h1>
+      <form id="gener-num">
+          <h2>Generate a number between 0 and</h2>
+          <input type="number" min="1">
+      </form>
+      <form id="guess-num">
+        <h3>Guess the number:</h3>
+        <input type="number" min="1">
+        <input type="button" value="play!!" name="play" id="play-btn">
+    </form>
+    <h3></h3>
+    <h3></h3>
     <script src="src/index.js"></script>
   </body>
 </html>
