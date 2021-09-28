@@ -1,24 +1,21 @@
 const generateNumber = document.querySelector("#gener-num input");
-const guessNumber = document.querySelector("#geuss-num input:first-child");
-const playBtn = document.querySelector("#geuss-num #play-btn");
+const guessNumber = document.querySelector("#guess-num input");
+const playBtn = document.querySelector("#guess-num #play-btn");
 const matchNumber = document.querySelector("#match");
 const resultNumber = document.querySelector("#result");
 
-const generNum = generateNumber.value;
-const guessNum = guessNumber.value;
-
-function handleInputNumber() {
-    console.log(generateNumber.value);
-}
-
 function handleClickBtn() {
-    matchNumber.innerTEXT = `You chose: ${generNum}, the machine chose: ${guessNum}`;
-    if (generNum !== guessNum) {
-        resultNumber.innerTEXT = "You lost!!";
+    const guessNum = guessNumber.value;
+    const MATCH_NUM = Math.round(Math.random() * generateNumber.value);
+    console.log(generateNumber.value, guessNum);
+
+    if (guessNum === MATCH_NUM) {
+        resultNumber.innerText = "You won!!";
     } else {
-        resultNumber.innerTEXT = "You won!!";
+        resultNumber.innerText = "You lost!!";
     }
+
+    matchNumber.innerText = `You chose: ${guessNum} the machine chose: ${MATCH_NUM}`;
 }
 
-generateNumber.addEventListener("input", handleInputNumber);
 playBtn.addEventListener("click", handleClickBtn);

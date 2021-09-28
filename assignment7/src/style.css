@@ -1,6 +1,6 @@
-h2, 
-h3 {
-    display: inline;
+input {
+    width: 200px;
+    height: 25px;
 }
 
 #play-btn{
@@ -8,12 +8,15 @@ h3 {
     height: 25px;
 }
 
-input {
-    width: 200px;
-    height: 25px;
+#gener-num h2,
+#guess-num h3{
+    display: inline;
 }
 
 #guess-num {
     margin-top: 25px;
 }
 
+#text-line {
+    display: block;
+}
