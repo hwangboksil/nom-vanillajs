@@ -5,14 +5,15 @@ const matchNumber = document.querySelector("#match");
 const resultNumber = document.querySelector("#result");
 
 function handleClickBtn() {
-    const guessNum = guessNumber.value;
+    const guessNum = Number(guessNumber.value);
     const MATCH_NUM = Math.round(Math.random() * generateNumber.value);
-    console.log(generateNumber.value, guessNum);
+    console.log(generateNumber.value, guessNum, MATCH_NUM);
+    // console.log(typeof generateNumber.value, typeof guessNum, typeof MATCH_NUM);
 
     if (guessNum === MATCH_NUM) {
-        resultNumber.innerText = "You won!!";
+        resultNumber.innerHTML = "You won!!";
     } else {
-        resultNumber.innerText = "You lost!!";
+        resultNumber.innerHTML = "You lost!!";
     }
 
     matchNumber.innerText = `You chose: ${guessNum} the machine chose: ${MATCH_NUM}`;
