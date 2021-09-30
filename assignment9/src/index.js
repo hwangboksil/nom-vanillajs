@@ -18,4 +18,13 @@ const colors = [
     "#ffd32a",
     "#ff3f34"
   ];
-  
+
+const changeBtn = document.querySelector("button");
+
+function handleClickBtn() {
+    const choseColor = colors[Math.floor(Math.random() * colors.length)];
+    console.log(choseColor);
+}
+
+changeBtn.addEventListener("click", handleClickBtn);
+
