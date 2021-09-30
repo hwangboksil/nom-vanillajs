@@ -23,7 +23,7 @@ const changeBtn = document.querySelector("button");
 
 function handleClickBtn() {
     const choseColor = colors[Math.floor(Math.random() * colors.length)];
-    console.log(choseColor);
+    document.body.style.backgroundColor = choseColor;
 }
 
 changeBtn.addEventListener("click", handleClickBtn);
