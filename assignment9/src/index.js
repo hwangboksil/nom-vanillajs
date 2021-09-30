@@ -21,9 +21,12 @@ const colors = [
 
 const changeBtn = document.querySelector("button");
 
-function handleClickBtn() {
-    const choseColor = colors[Math.floor(Math.random() * colors.length)];
-    document.body.style.backgroundColor = choseColor;
+function handleClickBtn(e) {
+    e.preventDefault()
+    const choseColor1 = colors[Math.floor(Math.random() * colors.length)];
+    const choseColor2 = colors[Math.floor(Math.random() * colors.length-2)];
+    const deg = Math.floor(Math.random() * 360);
+    document.body.style.background = `linear-gradient(${deg}deg,${choseColor1} 50%, ${choseColor2} 70%)`;
 }
 
 changeBtn.addEventListener("click", handleClickBtn);
