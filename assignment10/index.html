@@ -8,23 +8,25 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="guide-box">
-        <input id="name-del" type="button" value="로그아웃">
-        <div id="clock">
+    <div class="center" id="guide-box">
+        <div class="weather" id="weather">
+            <span></span>
+            <span></span>
+        </div>
+        <input class="logout" id="name-del" type="button" value="로그아웃">
+        <div class="clock" id="clock">
             <h2>00:00</h2>
         </div>
-        <form id="login-form">
-            <input type="text" placeholder="닉네임을 입력해 주세요." required>
-            <input type="submit" value="로그인">
-        </form>
-        <h1 id="greeting"></h1>
-        <form id="todos-form">
-            <input type="text" placeholder="할 일을 입력하세요." required>
-        </form>
-        <ul id="todos-list"></ul>
-        <div id="weather">
-            <span></span>
-            <span></span>
+        <div class="info">
+            <form class="user-name" id="login-form">
+                <input type="text" placeholder="닉네임을 입력해 주세요." required>
+                <input type="submit" value="로그인">
+            </form>
+            <h1 class="user-name" id="greeting"></h1>
+            <form class="todo-input" id="todos-form">
+                <input type="text" placeholder="할 일을 입력하세요." required>
+            </form>
+            <ul class="todo-list" id="todos-list"></ul>
         </div>
         <script src="src/js/index.js"></script>
         <script src="src/js/clock.js"></script>
