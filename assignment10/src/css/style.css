@@ -1,7 +1,3 @@
-body {
-    display: flex;
-}
-
-#clock {
-    margin: auto;
+.hidden{
+    display: none;
 }
