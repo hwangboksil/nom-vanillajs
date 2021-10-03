@@ -1,5 +1,5 @@
 const input = document.querySelector("#login-form");
-const inputName = document.querySelector("#login-form input:first-child");
+const inputName = input.querySelector("#login-form input:first-child");
 const loadName = document.querySelector("#greeting");
 const nameDelete = document.querySelector("#name-del");
 
